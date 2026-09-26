@@ -1,7 +1,6 @@
 baseURL = "https://alonsomvp.github.io/cuaderno-alonso/"
 languageCode = "es"
 title = "Cuaderno de Alonso"
-theme = ""
 
 [params]
   tagline = "Historias, viajes y alguna que otra opinión, escritos desde Madrid con la mirada puesta en otras partes."
