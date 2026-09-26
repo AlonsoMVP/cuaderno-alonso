@@ -1,0 +1,16 @@
+baseURL = "https://TU-USUARIO.github.io/cuaderno-alonso/"
+languageCode = "es"
+title = "Cuaderno de Alonso"
+theme = ""
+
+[params]
+  tagline = "Historias, viajes y alguna que otra opinión, escritos desde Madrid con la mirada puesta en otras partes."
+  author = "Alonso Vásquez"
+  footerNote = "Cuaderno de Alonso — Madrid, España."
+  email = "tu-correo@ejemplo.com"
+
+[taxonomies]
+  category = "categories"
+
+[markup.goldmark.renderer]
+  unsafe = true

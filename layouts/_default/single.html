@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="entry entry-full">
+  <p class="meta">
+    {{ with .Params.categories }}<span class="cat">{{ index . 0 }}</span> ·{{ end }}
+    {{ partial "fecha-es.html" . }}
+  </p>
+  <h1 class="post-title">{{ .Title }}</h1>
+  <div class="body">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="entries">
+  {{ range (where .Site.RegularPages "Type" "posts").ByDate.Reverse }}
+  <article class="entry">
+    <p class="meta">
+      {{ with .Params.categories }}<span class="cat">{{ index . 0 }}</span> ·{{ end }}
+      {{ partial "fecha-es.html" . }}
+    </p>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p class="excerpt">{{ .Params.summary }}</p>
+    <a class="readmore" href="{{ .RelPermalink }}">seguir leyendo</a>
+  </article>
+  {{ end }}
+</section>
+{{ end }}
